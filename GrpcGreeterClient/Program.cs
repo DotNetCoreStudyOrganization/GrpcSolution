@@ -10,7 +10,7 @@
     {
         static async Task Main(string[] args)
         {
-            var url = "https://localhost:5001";
+            var url = "https://localhost:53157";
 
             var httpClient = new HttpClient
             {

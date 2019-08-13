@@ -10,6 +10,8 @@
     {
         static async Task Main(string[] args)
         {
+            AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
+
             var url = "https://localhost:53157";
 
             var httpClient = new HttpClient

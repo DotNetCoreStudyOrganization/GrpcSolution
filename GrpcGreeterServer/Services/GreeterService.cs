@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Grpc.Core;
-using Microsoft.Extensions.Logging;
-
-namespace GrpcGreeter
+namespace GrpcGreeterServer
 {
+    using System.Threading.Tasks;
+    using Grpc.Core;
+    using Microsoft.Extensions.Logging;
+
     public class GreeterService : Greeter.GreeterBase
     {
         private readonly ILogger<GreeterService> _logger;

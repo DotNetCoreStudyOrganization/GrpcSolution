@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace GrpcGreeter
+namespace GrpcGreeterServer
 {
     public class Startup
     {
@@ -28,8 +28,6 @@ namespace GrpcGreeter
             }
 
             app.UseRouting();
-
-            app.UseHsts();
 
             app.UseEndpoints(endpoints =>
             {

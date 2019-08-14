@@ -12,7 +12,7 @@
         {
             AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
 
-            var url = "https://localhost:53157";
+            var url = "https://localhost:5001";
 
             var httpClient = new HttpClient
             {
